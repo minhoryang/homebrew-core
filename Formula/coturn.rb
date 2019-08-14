@@ -12,6 +12,7 @@ class Coturn < Formula
   end
 
   depends_on "libevent"
+  depends_on "hiredis"
 
   def install
     system "./configure", "--disable-debug",
